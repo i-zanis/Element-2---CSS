@@ -31,8 +31,7 @@
 <main>
 
 <h1>Online Order Form</h1>
-<h3 class="box1">ORDER NOW!</h3>
-<span class="box2" class="blinkingimage"><img src="images/boompizza.png" alt="pizza image"></span>
+<h3 class="flashingtext">ORDER NOW!</h3>
 <br><br>	<form action="http://www.tmntpizza.com/pizza.php" method="post">
 		<fieldset>
 			<legend>Your Information</legend>
