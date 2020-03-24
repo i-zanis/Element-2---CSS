@@ -2,256 +2,170 @@
 html {
   box-sizing: border-box;
 }
-
 * {
   box-sizing: inherit;
 }
 
-
-
 body {
-    font-family: Verdana, Arial, serif;
-    font-size: 100%;
-    background: linear-gradient(#177a39, #167637, #0c8836, #0f6b2e);/*green base gradient*/
-    margin: 0;
+  font-family: Verdana, Arial, serif;
+  font-size: 100%;
+  background-color: white;
+  margin: 0;
 }
-
 
 /* link styles */
-
-a:link {
-  color: white;
-}
-a:visited {
-    color: #adadad; /*grey*/  
-}
-
-a:focus,
-a:hover,
-a:active {
-    color: #d70000; /*red*/
-   
-}
+a:link, a:visited { color: #DC6903; }
+a:focus, a:hover, a:active { color: #F9AB33; }
 
 a {
-    text-decoration: none;
-    border-bottom: 1px dotted;
-    padding-bottom: .2em;
+ text-decoration: none;
+  border-bottom: 1px dotted;
+  padding-bottom: .2em;
 }
 
-.nounderline a:link {
-    text-decoration: none;
-    /*removes link underline under the image for styling purposes*/
-    border: none;
-}
 
-.nounderline a:visited {
-    text-decoration: none;
-    /*removes link underline under the image for styling purposes*/
-    border: none;
-}
-
-.nounderline a:hover {
-    text-decoration: none;
-    /*removes link underline under the image for styling purposes*/
-    border: none;
-}
-
-.nounderline a:active {
-    text-decoration: none;
-    /*removes link underline under the image for styling purposes*/
-    border: none;
-}
 /* header styles */
-
 header {
-    color: white;
-    background-size: cover;
-    text-align: center;
-    height: 13em;
+  color: white;
+  text-align: center;
 }
-
-header h1 {
-    margin-top: 1.5em;
-}
-
-header p {
-    display: none;/*p takes up a lot of vertical space in small screens, displayed only above 600w*/
-}
-
 
 /* nav styles */
-
-nav {
-    font-family: verdana, sans-serif;
-    background-color: #619600;/*vegetable green*/
+nav, footer {
+  font-family: verdana, sans-serif;
+  background-color: #783F27;
 }
-
-nav ul li a:link,
-nav ul li a:visited {
-    color: white;/*menu color has to remain the same*/
+nav ul li a:link, nav ul li a:visited {
+  color: #F9AB33;
 }
-
-
-
-
-
-nav ul li a:focus,
-nav ul li a:hover,
-nav ul li a:active {
-    color: #d70000;/*red*/
-    
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: #fff;
 }
-
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;/*removes bullets from list*/
-    display: flex;
-    flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-    font-size: .8em;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    flex: 1 1 50%;/*flex-grow, flex-shrink and flex-basis 
-                    li to 50% so there are two on each row*/
+ font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  flex: 1 1 50%;
 }
-
-nav ul li a {
-    display: block;
-    border: 1px solid;
-    padding: .5em 1em;
-    border-radius: .5em;
-    margin: .25em;
-}
+nav ul li a { 	
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em; 	
+  border-radius: .5em; 
+  margin: .25em; 
+  } 	
 
 
 /* main "products" styles */
-
 main {
-    font-size: 1em;
-    line-height: 1.4em;
-    color: white;
-    margin: 2.5%;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #555;
+  margin: 2.5%;
 }
-
 h2 {
-    font-family: Georgia, serif;
-    font-weight: normal;
-    font-size: 1.5em;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 1.5em;
 }
-
 h3 {
-    font-family: Verdana, sans-serif;
-    font-weight: normal;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    color: #7A0002;/*crimson red*/
-    border-top: 2px solid;
-    margin-top: 1.5em;
+  font-family: Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #7A0002;
+  border-top: 1px solid;
+  margin-top: 1.5em;
 }
-
 p.more {
-    font-family: verdana, sans-serif;
-    text-transform: uppercase;
-    font-size: .8em;
-    clear: left;
-    /*clear specifies what elements 
-    can float beside the cleared element and on which side.
-    */
+  font-family: verdana, sans-serif;
+  text-transform: uppercase; 
+  font-size: .8em;
+  clear: left;
 }
-
 main img {
-    display: block;
-    margin: .5em auto;
+  display: block;
+  margin: .5em auto;
 }
+/*
+
+
 
 
 /* aside "hours" styles */
 aside {
-    color: white;
-    border: double 4px #EADDC4;/*beige*/
-    border-radius: 18px;
-    margin: -2%;
-    grid-area: hours;
-    background: url(images/shell.png) repeat-y left top;
-    background-color: #619600;/*vegetable green*/
-    padding: 1em;
-    padding-left: 45px;
-    height: 350px;
-    text-align: center;
-    margin-top: 110%/*adjusts the distance of the border box with the logo*/
+  background: url(images/scallop_top.png) repeat-x left top; 
+  background-color: #F6F3ED;
+  padding: 1em;
+
 }
-
-
 /* misc styles */
-
 footer {
-    color: white;
-    text-align: center;
-    font-size: .8em;
-    padding: 0em;
+  color: #EADDC4;
+  text-align: center;
+  font-size: .8em;
+  padding: 1em;
 }
-
 .day {
-    color: black;
-    font-family: verdana, sans-serif;
-    font-size: .8em;
-    text-transform: uppercase;
+  color: #783F27;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
 }
+.linelength {
+  background: yellow;
+} 
 
-
-/*responsive design for various screen sizes*/
-
-/*Galaxy S5, iphone6/7/8*/
-@media screen and (min-width: 360px) {
-    .responsive_img {
-      width: 100%;
-      height: 50%;
-    }
-    nav ul li {
-        flex: none;
-    }
-    nav ul {
-        justify-content: center;
-    }
+@media screen and (min-width: 400px) {
+  nav ul li {
+    flex: none;
+  }
+  nav ul {
+    justify-content: center; 
+  }
 }
 
 @media screen and (min-width: 480px) {
-    main img {
-        float: left;
-        margin: 0 1em 1em 0;
-    }
+  main img {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
 
 @media screen and (min-width: 600px) {
-    header p {
-        display: block;
-        margin-top: -1.5em;
-        font-family: Georgia, serif;
-        font-style: italic;
-        font-size: 1.5em;
-    }
-    h2,
-    h3 {
-        font-weight: bold;
-    }
-    main {
-        line-height: 1.8em;
-        padding: 1em;
-        border: double 4px #EADDC4;/*beige*/
-        border-radius: 25px;
-        margin: 2.5%;
-        margin-top: 15%;/*adjusts the distance with the logo*/
-    }
+  /*header p {
+    display: block;
+    margin-top: -1.5em;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.2em;
+  }*/
+  main, h2, h3 {
+    font-family: 'Stint Ultra Expanded', Georgia, serif; 
+  }
+  h2, h3 {
+    font-weight: bold;
+  }
+  main {
+    line-height: 1.8em;
+    padding: 1em;
+    border: double 4px #EADDC4;
+    border-radius: 25px;
+    margin: 2.5%; /*logo image and box distance*/
+  }
 }
 
+@media screen and (min-width: 800px) {
+}
 @media screen and (min-width: 940px) {
-  main {
-    margin-top: 30%;/*adjusts the distance with the logo*/
-  }
   #container {
     display: grid;
     grid-template-rows: auto min-height 5em;
@@ -264,178 +178,67 @@ footer {
     margin: 0 auto;
     position: relative;
   }
-  
-
+  header {
+    grid-area: banner;
+  }
+  main {
+    grid-area: main;
     }
-    header {
-        grid-area: banner;
-    }
-    main {
-        grid-area: main;
-    }
-    footer {
-        grid-area: footer;
-    }
-    #validation {
-        position: fixed;
-        top: 40px;
-        left: 8px;
-        opacity: 100%;
-    }
+  aside {
+    grid-area: hours;
+    background: url(images/scallop.png) repeat-y left top;
+    background-color: #F6F3ED;
+    padding: 1em;
+    padding-left: 45px;
+  }
+  footer {
+    grid-area: footer;
+  }
+  #award { 	
+    position: absolute; 	
+    top: 30px; 	
+    left: 50px;
+  }
+} 
 
+/* menu page styles*/
 
-
-#socialicons {
-    text-align: center;
-    padding-top: 1em;
-}
-/*makes text blink*/
-.flashingtext { 
-  position: relative;
-  z-index: -2;
-  animation: blink 0.7s;
-  animation-iteration-count: 2;
-}
-@keyframes blink {
-    0% {
-        opacity:1;
-    }
-    50% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-
-/*brightens and zooms image slightly*/
-.brightenimage img {
-  transition: transform 1s, filter 0.2s ease-in-out;
-  transform-origin: center center;
-  filter: brightness(100%);
-}
-.brightenimage:hover img {
-  filter: brightness(110%);
-  transform: scale(1.04);
-}
-/*end of brightenimage*/
-
-/*changes standard mouse cursor to a pointer*/
-.pointer {
-    cursor: pointer;
-}
-
-/* zoom on image hover*/
-
-/* transition time to full image on hover */
-.hoverimage img {
-  transition: transform .5s ease;
-}
-
-/*image zoom on hover */
-.hoverimage:hover img {
-  transform: scale(1.5);
-}
-/* end of zoom on image hover*/
-
-/*menu page styling*/
 #menu {
+  border: 3px solid #783F27;
   display: flex;
   align-items: stretch;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top: 8%; /*logo image and box distance*/
 }
+/*removes standard styles for different feeling in the menu page*/
+.menustyle {
+  all: unset;
+}
+/*the overall box is too small*/
 
 section {
-  color: #7A0002;/*crimson red*/
   background: #F6F3ED;
   margin: 10px;
   padding: 20px;
-  border: 1.2px dotted #7A0002;/*crimson red*/
+  border: 1px dotted maroon;
   width: 240px;
   display: flex;
   flex-direction: column;
 }
-
 .title {
-  background-color: #7A0002;/*crimson red*/
-  color: #F9AB33;/*orange/mustard*/
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  font-size: 5em;
+  background-color: #783F27;
+  color: #F9AB33;
+  line-height: 4em;
 }
-
-/*price tag*/
 .price {
   font-weight: bold;
-  background: #F9AB33;/*orange/mustard*/
+  background: #F9AB33;
   padding: 5px;
   width: 100%;
   text-align: center;
   margin-top: auto;
 }
 
-/*menu info text*/
-.info {
-    font-size: 1.2em;
-    line-height: 2em;
-    color: black;
-    margin: 2.5%;
-/*end of menu page styling*/
-
-/*scrollbar styling*/
-}
-body::-webkit-scrollbar {
-  width: 11px;
-}
-body {
-  scrollbar-width: thin;
-  scrollbar-color: ;
-}
-body::-webkit-scrollbar-track {
-  background: ;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: #619600 ;
-  border-radius: 6px;
-  border: 3px solid;
-}
-/*end of scrollbar styling*/
-
-/*order page styling*/
-.orderpage {
-  list-style-type: none;/*removes bullets from list*/
-}
-
-/*links page styling*/
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 250px;
-}
-
-/*the larger video in the grid*/
-.box1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.box2, .box3, .box4, .box5, .box6, .box7{
-  position: relative; 
-  padding-bottom: 56.25%;
-  padding-left: 2%;
-  height: 0; overflow: hidden; 
-  max-width: 100%;
-}
-
-
-/*styling for videos for grid from embedresponsively.com*/
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
-
-.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-/*end of styling for videos*/
-
 /* CSS Document */
+
