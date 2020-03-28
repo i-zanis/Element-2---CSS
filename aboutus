@@ -1,92 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <link rel="stylesheet" type="text/css" href="design.css">
+<head><link rel="stylesheet" type="text/css" href="design.css">
 <meta charset="UTF-8">
-<title>TMNT PIZZA</title>
+<title>About Us - TMNT Pizza</title>
+
+<!-- description of the site for search engine results-->
+<meta name="description" content="Teenage Mutant Ninja Turtles Pizza is a night-time pizza restaurant in the sewers of Ealing.">
+
+<!--keywords in search engines-->
+<meta name="keywords" content="pizza, turtles, cheese, ealing, sewers, restaurant">
+<meta name="author" content="Ioannis Lafazanis">
+
+<!--sets the width of the viewport to the width of the device-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded">
 </head>
 
-
-  
 <body>
-	
-	<div id="container">
-		<header id="header">
-			<nav id="navigation">
-  				<ul>
-    				<li><a href="index.html">Home</a></li>
-    				<li><a href="menu.html">Menu</a></li>
-    				<li><a href="order.html">Order</a></li>
-    				<li><a href="links.html">Links</a></li>
-    				<li><a href="aboutus.html">About us</a></li>
-  				</ul>
-			</nav>
+    <div id="container">
+	   <header id="header">
+	       <nav>
+  		        <ul>
+    			    <li><a href="index.html">Home</a></li>
+    			    <li><a href="menu.html">Menu</a></li>
+    			    <li><a href="order.html">Order</a></li>
+    			    <li><a href="gallery.html">Gallery</a></li>
+    			    <li><a href="aboutus.html">About us</a></li>
+  			   </ul>
+		  </nav>  
+		    <h1><img width="300" height="80" src="images/TMNT_Pizza.png" alt="TMNT PIZZA LOGO"></h1>
+	   </header>
 
-			<h1><img src="images/TMNT_Pizza.png" alt="TMNT PIZZA LOGO"></h1>
-			<p>Your favourite underground Pizza place in the heart of Ealing...!</p>
-		</header>
+	    <main id="aboutus">
+	        <h1>About Us</h1>
+		    <h2><em>&ldquo;If you want to quickly understand what our pizza is, you should hop in and try it yourself&rdquo;.</em></h2>
+		    <h3>Our History</h3>
+            <div id="turtle"></div>
+		    <p>From the hardships of living underground. We thought one night of sharing this to the world as we sliced the rat meat in the air and beat it to make it softer. We put everything together in a round flat dough along with our passion. Our restaurant has been a main-stay for late night eating after bar tours. You can't go to sleep after so much alcohol, you have to make a stop...</p>
+		   <div class="wrapper"><!--google maps embedded code-->
+  		        <div class="aboutusBox1"><div class='embed-container'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.3451694220057!2d-0.3055255842300463!3d51.506883179635004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760df3035c5dfd%3A0x422f2334ccf21438!2sUniversity%20of%20West%20London!5e0!3m2!1sen!2suk!4v1584858039377!5m2!1sen!2suk" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div></div>
+		        <div class="aboutusBox2">
+			        <table>
+  				        <tr>
+    				        <th>Contact Info</th>
+  				        </tr>    
+                            <tr>
+    			                <td>Address</td>
+    			                <td><br><a class="asidelinks" href="https://goo.gl/maps/BbgSRSApi6knMGde7">323 Saint Mary's Sewers, London</a></td>
+  				           </tr>
+  				       <tr>
+    			           <td>Telephone</td>
+    			            <!--
+    			            .whitetext color to make second colulmn white for clarity
+    			            .whitetext a:link to remove the underline.
+    			            -->
+    			           <td><a href="tel:07717091689">07717091689</a></td>
+  				       </tr>
+  				       <tr>
+    			           <td>Email</td>
+    			           <td><a href="mailto:ioanlafazanis@gmail.com">lafazanis@gmail.com</a></td>
+  				      </tr>
+				    </table>	
+		        </div>
+            </div>
+		    <h3>Work for Us</h3>
+		    <div class="wrapper">
+  		        <div class="aboutusBox1"><img class="responsive_img2" src="images/ourteam.jpg" alt="our team photo"></div>	
+  		        <div class="aboutusBox2"><p>We are always on the lookout for passionate, talented individuals, so whether there are any current vacancies or not, we’re interested in hearing from you. Please send your CV and a short note about why you want to work with us and what makes you excited about it.</p></div>
+          </div>
+	   </main>
 
-	<main>
-		<h2><em>If you want to quickly understand what our pizza is, they should hop in and try it themselves.</em></h2>
-		<p>We started as an inspiration from the hardships of living under the city. We thought one night of sharing this to the world as we sliced the rat meat in the air and beat it to make it softer. We put everything together in a round flat dough along with our love. Our restaurant has been a main-stay for late night eating after bar tours. After so much alcohol, you wouldn't be able to tell the difference...
-		
+        <aside id="aside">
+            <h2>Hours</h2>
+            <p><span class="day">Mon:</span> 6pm to 6am</p>
+            <p><span class="day">Tue:</span> 5pm to 6am</p>
+            <p><span class="day">Wed:</span> 5pm to 6am</p>
+            <p><span class="day">Thu:</span> 5pm to 6am</p>
+            <p><span class="day">Fri:</span> 5pm to 7am</p>
+            <p><span class="day">Sat:</span> 5pm to 7am</p>
+            <p><span class="day">Sun:</span> 5pm to 6am</p>
+            <!--
+            asidelinks changes the green color of the default link styles 
+            so it doesn't match the aside bar color.
+            --> 
+            <p class="asidelinks"><span class="day">Address<br></span><a class="asidelinks" href="https://goo.gl/maps/BbgSRSApi6knMGde7">Check Location</a></p>
+            <p class="asidelinks"><span class="day">Telephone<br></span><a href="tel:07717091689">07717091689</a></p>
+            <p class="asidelinks"><a href="order.html">Order<br>NOW!!</a></p>
+        </aside>
 
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.3451694220057!2d-0.3055255842300463!3d51.506883179635004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760df3035c5dfd%3A0x422f2334ccf21438!2sUniversity%20of%20West%20London!5e0!3m2!1sen!2suk!4v1584858039377!5m2!1sen!2suk" allowfullscreen="" aria-hidden="false" tabindex="0">Your browser does not support google maps.</iframe>
-			<table style="width:100%">
-  				<tr>
-    			<th span="2">Contact Info</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-</table>
-			<table>
-				<th span="2"></th>
-			<tr>Contact number:</tr><td><a href="tel:07717091689">07717091689</a></td>
-			<tr>E-mail:</tr><td><a href="mailto:ioanlafazanis@gmail.com">ioanlafazanis@gmail.com</a></td>
-			</table>
-			</p>
-	</main>
-
-	<aside>
-		<h2>Hours</h2>
-		<p><span class="day">Monday:</span> 6pm to 6am</p>
-		<p><span class="day">Tuesday:</span> 5pm to 6am</p>
-		<p><span class="day">Wednesday:</span> 5pm to 6am</p>
-		<p><span class="day">Thursday:</span> 5pm to 6am</p>
-		<p><span class="day">Friday:</span> 5pm to 7am</p>
-		<p><span class="day">Saturday:</span> 5pm to 7am</p>
-		<p><span class="day">Sunday:</span> 5pm to 6am</p>
-	</aside>
-
-	<footer id="footer">
-		<!--validation fixed position(moving) icon--> 
-    	<div id="validation" class="nounderline">
-    	<a href="validation/index-validation.pdf">
-    	<img src="icons/w3c.png" alt="w3c validated logo" width="100"></a></div>
-
- 		<!--socialicons = social media icons. nonunderline class removes link underline for visual purposes-->
-    	<div id="socialicons" class="nounderline">
-    		<p>Our social media pages</p>
-			<p>
-				<a href="http://www.twitter.com"><img src="icons/twitter.svg" alt="twitter" width="50"></a>
-		 		<a href="http://www.facebook.com"><img src="icons/facebook.svg" alt="facebook" width="50"></a>
-				<a href="http://www.instagram.com"><img src="icons/instagram.svg" alt="instagram" width="50"></a>
-			</p>
-			<small>&copy; Teenage Mutant Ninja Turtles Pizza. All rights reserved to their respective owners.</small>
-		</div>
-	</footer>
-</div>
+        <footer id="footer">
+            <div class="nounderline">
+                <a href="validation/validation.pdf">
+                <img src="icons/w3c.png" alt="w3c validated logo" width="100"></a>
+            </div>
+                <!--
+                socialicons = social media icons. 
+                nonunderline class removes link underline for visual purposes
+                -->
+            <div id="socialicons" class="nounderline">
+                <p>
+                    <a href="http://www.twitter.com"><img src="icons/twitter.svg" alt="twitter" width="50"></a>
+                    <a href="http://www.facebook.com"><img src="icons/facebook.svg" alt="facebook" width="50"></a>
+                    <a href="http://www.instagram.com"><img src="icons/instagram.svg" alt="instagram" width="50"></a>
+                </p>
+                <small>&copy; Teenage Mutant Ninja Turtles Pizza. All rights reserved to their respective owners.</small>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
