@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" type="text/css" href="design.css">
+<meta charset="UTF-8">
+<title>Gallery - TMNT Pizza</title>
+
+<!-- description of the site for search engine results-->
+<meta name="description" content="Teenage Mutant Ninja Turtles Pizza is a night-time pizza restaurant in the sewers of Ealing.">
+
+<!--keywords in search engines-->
+<meta name="keywords" content="pizza, turtles, cheese, ealing, sewers, restaurant">
+<meta name="author" content="Ioannis Lafazanis">
+
+<!--sets the width of the viewport to the width of the device-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded">
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </nav> 
+            <h1><img width="300" height="80" src="images/TMNT_Pizza.png" alt="TMNT PIZZA LOGO"></h1>
+        </header>
+
+        <main>
+            <h1>Gallery</h1>
+            <div class="wrapper"><!--youtube embedded video-->
+                <div class="box box1"><div class='embed-container'><iframe src='https://www.youtube.com/embed/Tb2rT4s5jLE' frameborder='0' allowfullscreen></iframe></div></div><!--photos have animations vertpan, revvertpan, morph, morph2, spin-->
+                <div class=" box box2 vertpan"><img class="responsive_img" src="images/pizza1.jpg" alt="delicious pizza photo"></div>
+                <div class="box box3 vertpan"><img class="responsive_img" src="images/pizza2.jpg" alt="delicious pizza photo"></div>
+                <div class="box box4 revvertpan"><img class="responsive_img" src="images/pizza3.jpg" alt="delicious pizza photo"></div>
+                <div class="box box5 morph2"><img class="responsive_img" src="images/pizza4.jpg" alt="delicious pizza photo"></div>
+                <div class="box box6 morph"><img class="responsive_img" src="images/turtle-eating-pizza.jpg" alt="turtle eating pizza photo"></div>
+                <div class="box box7 spin"><img class="responsive_img" src="images/turtle-eating-pizza2.jpg" alt="turtle eating pizza photo"></div>
+            </div>
+        </main>
+
+        <aside id="aside">
+            <h2>Hours</h2>
+            <p><span class="day">Mon:</span> 6pm to 6am</p>
+            <p><span class="day">Tue:</span> 5pm to 6am</p>
+            <p><span class="day">Wed:</span> 5pm to 6am</p>
+            <p><span class="day">Thu:</span> 5pm to 6am</p>
+            <p><span class="day">Fri:</span> 5pm to 7am</p>
+            <p><span class="day">Sat:</span> 5pm to 7am</p>
+            <p><span class="day">Sun:</span> 5pm to 6am</p>
+            <!--
+            asidelinks changes the green color of the default link styles 
+            so it doesn't match the aside bar color.
+            --> 
+            <p class="asidelinks"><span class="day">Address<br></span><a class="asidelinks" href="https://goo.gl/maps/BbgSRSApi6knMGde7">Check Location</a></p>
+            <p class="asidelinks"><span class="day">Telephone<br></span><a href="tel:07717091689">07717091689</a></p>
+            <p class="asidelinks"><a href="order.html">Order<br>NOW!!</a></p>
+        </aside>
+
+        <footer id="footer">
+            <div class="nounderline">
+                <a href="validation/validation.pdf">
+                <img src="icons/w3c.png" alt="w3c validated logo" width="100"></a>
+            </div>
+                <!--
+                socialicons = social media icons. 
+                nonunderline class removes link underline for visual purposes
+                -->
+            <div id="socialicons" class="nounderline">
+                <p>
+                    <a href="http://www.twitter.com"><img src="icons/twitter.svg" alt="twitter" width="50"></a>
+                    <a href="http://www.facebook.com"><img src="icons/facebook.svg" alt="facebook" width="50"></a>
+                    <a href="http://www.instagram.com"><img src="icons/instagram.svg" alt="instagram" width="50"></a>
+                </p>
+                <small>&copy; Teenage Mutant Ninja Turtles Pizza. All rights reserved to their respective owners.</small>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
