@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 CSS document
-
+Ioannis Lafazanis
 
 Contents 
 
@@ -15,15 +15,9 @@ responsive styles based on min-width of the device
 menu page styles
 order page styling
 gallery page styles
-gallery page styles
-link styles - navigation styles
 scrollbar styles
 animation styles
 */
-
-
-
-
 
 
 html {
@@ -604,7 +598,7 @@ a:active, input[type=button]:active {
   border: none;
   cursor: pointer;
 }
-/*end of link styles - navigation styles*/
+/*end of no underline for social icons*/
 
 
 /*scrollbar styles*/

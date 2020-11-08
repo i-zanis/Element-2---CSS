@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" type="text/css" href="design.css">
+<meta charset="UTF-8">
+<title>Order Now - TMNT Pizza</title>
+
+<!-- description of the site for search engine results-->
+<meta name="description" content="Teenage Mutant Ninja Turtles Pizza is a night-time pizza restaurant in the sewers of Ealing.">
+
+<!--keywords in search engines-->
+<meta name="keywords" content="pizza, turtles, cheese, ealing, sewers, restaurant">
+<meta name="author" content="Ioannis Lafazanis">
+
+<!--sets the width of the viewport to the width of the device-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded">
+</head>
+
+<body>
+	<div id="container">
+		<header id="header">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				 	<li><a href="menu.html">Menu</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="aboutus.html">About us</a></li>
+				</ul>
+			</nav> 
+			<h1><img width="300" height="80" src="images/TMNT_Pizza.png" alt="TMNT PIZZA LOGO"></h1>
+			<script src="validator.js">
+			</script>
+		</header>
+
+		<main id="orderpage">
+			<h1>On-line Order Form</h1>
+			<h3 class="flashingtext">ORDER NOW!</h3>
+			<br>
+			<br>
+			<form name="orderForm" onsubmit="return validateForm()" action="confirmation.php" method="post">
+				<fieldset>
+					<legend>Your Information</legend>
+					<ul class="orderpage"><!--&nbsp; for alignment-->
+						<li><label for="form-name">Name:&nbsp;&nbsp;&nbsp;</label><input id="form-name" name="customername" type="text"></li>
+						<li><label for="form-address">Address:</label><input id="form-address" name="address" type="text"></li>
+						<li><label for="form-tel">Tel: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="form-tel" name="telephone" type="tel"></li>
+						<li><label for="form-email">Email:&nbsp;&nbsp;&nbsp;&nbsp;<input id="form-email" name="email" type="email"></label></li>
+						<li>Delivery instructions:<br>
+						<textarea cols="35" id="form-message" maxlength="400" name="instructions" placeholder="No more than 400 characters long" rows="5"></textarea></li>
+					</ul>
+				</fieldset>
+				<h3>Design your pizza:</h3>
+				<fieldset>
+					<legend>Choices</legend>
+					<fieldset>
+					<legend>Crust <em>(Choose one)</em>:</legend>
+					<ul class="orderpage">
+						<li><label><input name="crust" type="radio" value="cheese crust">Extra-blue cheese crust</label></li>
+						<li><label><input name="crust" type="radio" value="brown">Sewer brownie</label></li>
+						<li><label><input name="crust" type="radio" value="cheese crust">Rat tail-stuffed crust</label></li>
+						<li><label><input name="crust" type="radio" value="sausage free">Rat wiener-crust</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Toppings <em>(Choose as many as you want)</em></legend>
+					<ul class="orderpage">
+						<li><label><input checked name="toppings[]" type="checkbox" value="blood sauce">Chopped rat whisker</label></li>
+						<li><label><input name="toppings[]" type="checkbox" value="insect sauce">Crushed roach sauce</label></li>
+						<li><label><input name="toppings[]" type="checkbox" value="mozzarella">Stinky mozzarella</label></li>
+						<li><label><input name="toppings[]" type="checkbox" value="pepperoni">Rat-pepperoni</label></li>
+						<li><label><input name="toppings[]" type="checkbox" value="mushrooms">Poisonous fungi</label></li>
+						<li><label><input name="toppings[]" type="checkbox" value="seaweed">Gloomy seaweed</label></li>
+						<li><label><input name="toppings[]" type="checkbox" value="fish">Still-water fish</label></li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Number</legend>
+						<p>How many pizzas: <select name="pizzas" size="1">
+						<option>1</option>
+						<option>2</option>						
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						</select></p>
+				</fieldset>
+				</fieldset><!-- closes 'Pizza Specs' fieldset -->		
+				<p><input type="submit" value="Bring me a pizza!"><br><input type="reset"></p>
+			</form>
+		</main>
+
+		<aside id="aside">
+      		<h2>Hours</h2>
+      		<p><span class="day">Mon:</span> 6pm to 6am</p>
+      		<p><span class="day">Tue:</span> 5pm to 6am</p>
+      		<p><span class="day">Wed:</span> 5pm to 6am</p>
+      		<p><span class="day">Thu:</span> 5pm to 6am</p>
+      		<p><span class="day">Fri:</span> 5pm to 7am</p>
+      		<p><span class="day">Sat:</span> 5pm to 7am</p>
+      		<p><span class="day">Sun:</span> 5pm to 6am</p>
+      		<!--
+      		asidelinks changes the green color of the default link styles 
+      		so it doesn't match the aside bar color.
+      		-->	
+      		<p class="asidelinks"><span class="day">Address<br></span><a class="asidelinks" href="https://goo.gl/maps/BbgSRSApi6knMGde7">Check Location</a></p>
+      		<p class="asidelinks"><span class="day">Telephone<br></span><a href="tel:07717091689">07717091689</a></p>
+      		<p class="asidelinks"><a href="order.html">Order<br>NOW!!</a></p>
+    	</aside>
+
+		<footer id="footer">
+    		<div class="nounderline">
+    			<a href="validation/validation.pdf">
+    			<img src="icons/w3c.png" alt="w3c validated logo" width="100"></a>
+    		</div>
+ 				<!--
+				socialicons = social media icons. 
+				nonunderline class removes link underline for visual purposes
+				-->
+    		<div id="socialicons" class="nounderline">
+				<p>
+					<a href="http://www.twitter.com"><img src="icons/twitter.svg" alt="twitter" width="50"></a>
+		 			<a href="http://www.facebook.com"><img src="icons/facebook.svg" alt="facebook" width="50"></a>
+					<a href="http://www.instagram.com"><img src="icons/instagram.svg" alt="instagram" width="50"></a>
+				</p>
+				<small>&copy; Teenage Mutant Ninja Turtles Pizza. All rights reserved to their respective owners.</small>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
