@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
+
 CSS document
-Ioannis Lafazanis
 
 Contents 
 
@@ -325,7 +325,7 @@ p.more {
     color: white;
     background: url(images/halfcircle.png) repeat-y left top;
     background-color: green;
-    padding: 1em;
+    padding: 0.1em;
     padding-left: 45px;
     top: 13%;
     left: 73%;
@@ -456,10 +456,11 @@ found at:
 */
 
 /*image class for responsiveness for all screen widths*/
-.responsive_img {
+.responsive_img2 {
       width: 100%;
       height:auto;
 }
+
 
 /*styles for videos for grid from embedresponsively.com*/
 .embed-container { 
